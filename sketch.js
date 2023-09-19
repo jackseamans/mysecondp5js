@@ -1,5 +1,8 @@
 let x = 200;
-let speed = 2;
+let x1 = 200;
+let x2 = 200;
+let speed1 = 2;
+let speed2 = 2;
 let diameter = 40;
 let isClicked = false
 
@@ -10,30 +13,36 @@ function setup() {
 
 function draw (){
   background(125);
-  ellipse(x, height/2, 40);
+  rect(x1, height/4, 40)
+  ellipse(x2, height/2, 40);
 
-  if (x >= width || x <= 0) {
-  speed = speed * -1
+  if (x1 >= width || x1 <= 0) {
+  speed1 = speed1 * -1
   }
 
-  x += speed;
-}
+  x1 += speed1;
 
-function mousePressed() {
-isClicked = !isClicked;
-  if (isClicked) {
-    noLoop();
-  } else {
-    loop()
-  }
-}
+  if (mouseIsPressed) {
+    speed2 = 0
+      } else {x2 += 0}
+  
+
+  if (x2 >= width || x2 <= 0) {
+    speed2 = speed2 * -1
+    }
+  
+    x2 += speed2;
+
+} 
+
+
+
 
 
 // function mousePressed() {
-//    noLoop();
-
-//  }
-//    function mouseReleased() {
-//      loop();
-  
-//    }
+// isClicked = !isClicked;
+//   if (isClicked) {
+//   } else {
+    
+//   }
+//}
