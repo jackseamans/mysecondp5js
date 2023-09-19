@@ -1,6 +1,7 @@
 let x = 200;
 let speed = 2;
 let diameter = 40;
+let isClicked = false
 
 function setup() {
 
@@ -18,12 +19,21 @@ function draw (){
   x += speed;
 }
 
-
 function mousePressed() {
-   noLoop();
+isClicked = !isClicked;
+  if (isClicked) {
+    noLoop();
+  } else {
+    loop()
+  }
+}
 
- }
-   function mouseReleased() {
-     loop();
+
+// function mousePressed() {
+//    noLoop();
+
+//  }
+//    function mouseReleased() {
+//      loop();
   
-   }
+//    }
