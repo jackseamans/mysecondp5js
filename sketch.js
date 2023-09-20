@@ -1,4 +1,3 @@
-let x = 200;
 let x1 = 200;
 let x2 = 200;
 let speed1 = 2;
@@ -6,10 +5,12 @@ let speed2 = 2;
 let diameter = 40;
 let isClicked = false
 
-function setup() {
 
+function setup() {
+  
   createCanvas(400, 400);  
 }
+
 
 function draw (){
   background(125);
@@ -35,7 +36,8 @@ function draw (){
 
 } 
 
-
+I got to number five of the first part and could not find a solution.
+I will watch through the videos tomorrow to find the answers.
 
 
 
