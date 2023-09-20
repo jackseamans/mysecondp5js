@@ -36,11 +36,8 @@ function draw (){
 
 } 
 
-// I got to number five of the first part and could not find a solution.
-// I will watch through the videos tomorrow to find the answers.
 // My main issue was trying to find a way to identify the color of one shape in order to change only that.
-
-
+// I will watch the videos tomorrow and find the solutions.
 
 // function mousePressed() {
 // isClicked = !isClicked;
