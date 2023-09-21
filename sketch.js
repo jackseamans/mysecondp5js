@@ -4,6 +4,7 @@ let speed1 = 2;
 let speed2 = 2;
 let diameter = 40;
 let isClicked = false
+let transparency = 0
 
 
 function setup() {
@@ -13,8 +14,19 @@ function setup() {
 
 
 function draw (){
-  background(125);
+  if (millis() > 10000) {
+    background("blue");
+  } else {
+    background(255, 125, 0);
+  }
+  
+  if (transparency < 255) {
+    transparency++;
+  }
+    fill(255, 0, 0, transparency)
   rect(x1, height/4, 40)
+
+  fill(255, 255, 0)
   ellipse(x2, height/2, 40);
 
   if (x1 >= width || x1 <= 0) {
@@ -35,3 +47,15 @@ function draw (){
     x2 += speed2;
 
   }
+
+  function keyPressed() {
+    if (key == 'j' || key == 'J'){
+      if (speed2 < 0) {
+        console.log("Going Left!")
+      } else {
+        console.log("Going Right!")
+      }
+      }
+    console.log("a key was pressed");
+    }
+  
